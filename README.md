@@ -4,9 +4,9 @@
    Run `npm run electron`  
 
 ## Packager application
-   Run `npm run build_mac`  for mac
-   Run `npm run build_win32` for win
-   Run `npm run build_linux` for linux
+   Run `npm run build_mac`  for mac ＜/br＞
+   Run `npm run build_win32` for win ＜/br＞
+   Run `npm run build_linux` for linux ＜/br＞
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0-rc.1.
 
