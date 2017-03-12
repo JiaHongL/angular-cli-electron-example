@@ -1,4 +1,4 @@
-# ng-electron-example
+# Angular-cli-Electron-example
 
 ## Running Electron Application
    Run `npm run electron`  
