@@ -1,9 +1,9 @@
 # ng-electron-example
 
-## Running electron application
+## Running Electron Application
    Run `npm run electron`  
 
-## Packager application
+## Package your Application
    Run `npm run build_mac`  for mac  
    Run `npm run build_win32` for win  
    Run `npm run build_linux` for linux  
