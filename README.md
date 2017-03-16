@@ -1,5 +1,10 @@
 # Angular-cli-Electron-example
 
+## Installation
+ `git clone https://github.com/JiaHongL/Angular-cli-Electron-example.git`  
+ `cd Angular-cli-Electron-example`  
+ `npm install`  
+
 ## Running Electron Application
    Run `npm run electron`  
 
