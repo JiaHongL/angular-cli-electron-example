@@ -19,7 +19,7 @@ function createWindow() {
   // ii.開發時候使用
   setTimeout(() => {
     win.loadURL('http://localhost:4200');
-  }, 5000);
+  }, 10000);
   // Open the DevTools. ps:打包時候記得關掉
   win.webContents.openDevTools()
   // Emitted when the window is closed.
