@@ -8,6 +8,9 @@
    Run `npm run build_win32` for win  
    Run `npm run build_linux` for linux  
 
+## Clean Folder ( ./dist and ./release)  2017/3/16 add
+    Run `npm run clean` 
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0-rc.1.
 
 ## Development server
