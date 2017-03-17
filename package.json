@@ -15,8 +15,8 @@
     "build-electron-prod": "ng build -prod --base-href . && cp src/electron/prod/* dist",
     "electron": "npm run build-electron-dev && concurrently \"ng serve\" \"electron dist\"",
     "build_mac": "npm run build-electron-prod && electron-packager ./dist ng-electron-example --platform=darwin --arch=x64 --out=./release --version=1.6.2 --icon=tools.icns --asar=true --ignore=node_modules/electron-* --overwrite",
-    "build_win32": "npm run build-electron-prod && electron-packager ./dist ng-electron-example --platform=win32 --arch=x64 --out=./release --version=1.6.2 --icon=tools.icns --asar=true --ignore=node_modules/electron-* --overwrite",
-    "build_linux": "npm run build-electron-prod && electron-packager ./dist ng-electron-example --platform=linux --arch=x64 --out=./release --version=1.6.2 --icon=tools.icns --asar=true --ignore=node_modules/electron-* --overwrite"
+    "build_win32": "npm run build-electron-prod && electron-packager ./dist ng-electron-example --platform=win32 --arch=x64 --out=./release --version=1.6.2 --icon=tools.ico --asar=true --ignore=node_modules/electron-* --overwrite",
+    "build_linux": "npm run build-electron-prod && electron-packager ./dist ng-electron-example --platform=linux --arch=x64 --out=./release --version=1.6.2 --icon=tools.png --asar=true --ignore=node_modules/electron-* --overwrite"
   },
   "private": true,
   "dependencies": {
