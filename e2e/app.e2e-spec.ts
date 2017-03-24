@@ -1,10 +1,10 @@
-import { B2BPrototypePage } from './app.po';
+import { AngularCliElectronExamplePage } from './app.po';
 
-describe('b2-b-prototype App', () => {
-  let page: B2BPrototypePage;
+describe('angular-cli-electron-example App', () => {
+  let page: AngularCliElectronExamplePage;
 
   beforeEach(() => {
-    page = new B2BPrototypePage();
+    page = new AngularCliElectronExamplePage();
   });
 
   it('should display message saying app works', () => {

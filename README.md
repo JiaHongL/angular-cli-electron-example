@@ -17,6 +17,6 @@
    Run `npm run clean` 
    
 ## Support for electron-renderer   2017.3.16 add
-    
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0-rc.1.
+
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
 

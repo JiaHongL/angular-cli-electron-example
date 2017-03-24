@@ -59,13 +59,13 @@ class NgCliWebpackConfig {
       development: {
         environment: 'dev',
         outputHashing: 'media',
-        sourcemap: true,
+        sourcemaps: true,
         extractCss: false
       },
       production: {
         environment: 'prod',
         outputHashing: 'all',
-        sourcemap: false,
+        sourcemaps: false,
         extractCss: true,
         aot: true
       }
@@ -84,7 +84,7 @@ class NgCliWebpackConfig {
     const appConfigDefaults = {
       testTsconfig: appConfig.tsconfig,
       scripts: [],
-      styles: [],
+      styles: []
     };
     // can't use Object.assign here because appConfig has a lot of getters/setters
     for (let key of Object.keys(appConfigDefaults)) {
