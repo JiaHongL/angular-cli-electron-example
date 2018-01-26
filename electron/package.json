@@ -1,5 +1,5 @@
 {
     "name": "angular-electron",
     "version": "0.0.1",
-    "main": "electron.js"
+    "main": "main.js"
 }
