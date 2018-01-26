@@ -14,9 +14,9 @@
     "clear": "rm -rf ./dist && rm -rf ./release",
     "electron": "concurrently \"wait-on http-get://localhost:4200 && npm run electron-start\" \"npm run start\"",
     "ng-build": "ng build --prod --base-href . && cpx \"electron/*.{js,json}\" dist",
-    "electron-build:mac": "electron-packager ./dist CsvEditor --platform=darwin --arch=x64 --out=./release --electronVersion=1.7.10 --icon=tools.icns  --ignore=node_modules/electron-* --overwrite",
-    "electron-build:win32": "electron-packager ./dist CsvEditor --platform=win32 --arch=x64 --out=./release --electronVersion=1.7.10 --icon=tools.ico  --ignore=node_modules/electron-* --overwrite",
-    "electron-build:linux": "electron-packager ./dist CsvEditor --platform=linux --arch=x64 --out=./release --electronVersion=1.7.10 --icon=tools.png  --ignore=node_modules/electron-* --overwrite",
+    "electron-build:mac": "electron-packager ./dist ng-cli-electron-example --platform=darwin --arch=x64 --out=./release --electronVersion=1.7.10 --icon=tools.icns  --ignore=node_modules/electron-* --overwrite",
+    "electron-build:win32": "electron-packager ./dist ng-cli-electron-example --platform=win32 --arch=x64 --out=./release --electronVersion=1.7.10 --icon=tools.ico  --ignore=node_modules/electron-* --overwrite",
+    "electron-build:linux": "electron-packager ./dist ng-cli-electron-example --platform=linux --arch=x64 --out=./release --electronVersion=1.7.10 --icon=tools.png  --ignore=node_modules/electron-* --overwrite",
     "build:mac": "npm run ng-build && npm run electron-build:mac",
     "build:win32": "npm run ng-build && npm run electron-build:win32",
     "build:linux": "npm run ng-build && npm run electron-build:linux"
@@ -34,8 +34,7 @@
     "@angular/router": "^5.2.0",
     "core-js": "^2.4.1",
     "rxjs": "^5.5.6",
-    "zone.js": "^0.8.19",
-    "electron-is-dev": "^0.3.0"
+    "zone.js": "^0.8.19"
   },
   "devDependencies": {
     "@angular/cli": "1.6.6",
@@ -46,6 +45,10 @@
     "@types/jasminewd2": "~2.0.2",
     "@types/node": "~6.0.60",
     "codelyzer": "^4.0.1",
+    "concurrently": "^3.5.1",
+    "cpx": "^1.5.0",
+    "electron": "^1.7.10",
+    "electron-packager": "^10.1.1",
     "jasmine-core": "~2.8.0",
     "jasmine-spec-reporter": "~4.2.1",
     "karma": "~2.0.0",
@@ -57,10 +60,6 @@
     "ts-node": "~4.1.0",
     "tslint": "~5.9.1",
     "typescript": "~2.5.3",
-    "wait-on": "^2.1.0",
-    "concurrently": "^3.5.1",
-    "cpx": "^1.5.0",
-    "electron": "^1.7.10",
-    "electron-packager": "^10.1.1"
+    "wait-on": "^2.1.0"
   }
 }

@@ -5,11 +5,16 @@ const {
 } = require('electron');
 const path = require('path');
 const url = require('url');
-const isDev = require('electron-is-dev');
 
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
 let win
+
+function isDev() {
+  return process.defaultApp
+      || /[\\/]electron-prebuilt[\\/]/.test(process.execPath)
+      || /[\\/]electron[\\/]/.test(process.execPath);
+}
 
 function createWindow() {
   // Create the browser window.
@@ -18,8 +23,7 @@ function createWindow() {
     height: 600
   })
   // and load the index.html of the app.
-  // isDev=>此套件會自動判斷是開發或是正式環境
-  if (isDev) {
+  if (isDev()) {
     win.loadURL('http://localhost:4200');
     win.webContents.openDevTools();
   } else {
@@ -27,8 +31,9 @@ function createWindow() {
       pathname: path.join(__dirname, 'index.html'),
       protocol: 'file:',
       slashes: true
-    }))
+    }));
   };
+
   // Emitted when the window is closed.
   win.on('closed', () => {
     // Dereference the window object, usually you would store windows

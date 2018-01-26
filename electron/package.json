@@ -1,5 +1,5 @@
 {
-    "name": "angular-electron",
-    "version": "0.0.1",
-    "main": "main.js"
+  "name": "ng-cli-electron-example",
+  "version": "0.0.1",
+  "main": "main.js"
 }
